@@ -1,18 +1,17 @@
-import React, {Component} from "react";
+import React from "react";
 import "./App.css";
 
 //import components
 import NavBar from "./components/Navbar/NavBar";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 
-class App extends Component{
-render() {
+const App = () => {
     return(
         <div>
             <NavBar />
-            <h1> Bienvenidos a Natural!</h1>
+            <ItemListContainer greeting="Bienvenidos a Nature" />
         </div>
         );
-    }
 }
 
 export default App
